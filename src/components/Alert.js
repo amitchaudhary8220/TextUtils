@@ -5,11 +5,12 @@ export default function Alert(props) {
         return lower=lower.charAt(0).toUpperCase()+lower.slice(1)
     }
   return (
-    <div>
-     props.alert && <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
+    // <div>
+      <div style={{height:'50px'}}>
+    <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
       <strong>{props.alert.type}</strong>:{props.alert.msg}
-
-    </div>  
+    </div> 
     </div>
+    // </div>
   )
 }
